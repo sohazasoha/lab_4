@@ -1,0 +1,102 @@
+@startuml
+class Tool {
++ name
++ type
++ count
++ __init__()
+}
+
+class Weapon {
++ damage
++ speed
++ num bullets
++ __init__()
++ __repr__()
+}
+
+class Gun {
++ damage
++ speed
++ num bullets
++ __init__()
+}
+
+class Knife {
++ damage
++ speed
++ num bullets
++ __init__()
+}
+
+class SniperRifle {
++ damage
++ speed
++ num bullets
++ __init__()
+}
+
+class MachinePistol {
++ damage
++ speed
++ num bullets
++ __init__()
+}
+
+class Weapon extends Tool
+class Gun extends Tool
+class Knife extends Tool
+class SniperRifle extends Tool
+class MachinePistol extends Tool
+
+class Human {
++ name
++ status
++ health
++ usual damage
++ items
++ fight()
++ check()
++ give item()
++ __init__()
++ __repr__()
+}
+
+class Public {
++ __init__()
+}
+
+class Policemen {
++ name
++ health
++ usual damage
++ __init__()
+}
+
+class Mafia {
++ name
++ health
++ usual damage
++ __init__()
+}
+
+class StreetWalkers {
++ name
++ health
++ usual damage
++ __init__()
+}
+
+class MainPerson {
++ name
++ health
++ usual damage
++ __init__()
++ __repr__()
+}
+
+class Public extends Human
+class Policemen extends Public
+class Mafia extends Public
+class StreetWalkers extends Public
+class MainPerson extends Human
+@enduml
